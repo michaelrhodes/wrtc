@@ -1,0 +1,21 @@
+{
+  "name": "wrtc",
+  "author": "Michael Rhodes",
+  "version": "0.3.5",
+  "main": "index.js",
+  "browser": "browser.js",
+  "license": "BSD-2-Clause",
+  "binary": {
+    "module_name": "wrtc",
+    "module_path": "./build/",
+    "remote_path": "./{module_name}/v{version}/{configuration}/",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
+    "host": "https://node-webrtc.s3.amazonaws.com"
+  },
+  "dependencies": {
+    "node-pre-gyp": "^0.12.0"
+  },
+  "scripts": {
+    "install": "node-pre-gyp install"
+  }
+}
